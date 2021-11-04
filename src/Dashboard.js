@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { Component, useState } from "react";
 import './Components.css'
+import { Navbars } from './Component.js';
 
 function Dashboard() {
     return (
         <div>
-            <h1>Students</h1>
+            <Navbars />
+            <div style={{display:"inline-block"}}>
+                <h2>Students</h2>
+                
+                <h2>Visitors</h2>
+                <h2>Staff</h2>
+            </div>
+
         </div>
     )
 }

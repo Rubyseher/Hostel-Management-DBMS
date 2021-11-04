@@ -48,12 +48,29 @@
 .login input:hover{
     color: black;
 }
+
+.burger{
+  background-color: #0d31a5e7;
+  padding: 5% 3%;
+  width: 250px;
+  height: 100vh;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  float: left;
+  /* position: fixed; */
+}
+
+.burger h4{
+  margin-bottom: 30px;
+}
+
 .gradientLogin {
   background-image: linear-gradient(
     to right,
-    #314755 0%,
+    #0d31a5e7 0%,
     #26a0da 51%,
-    #314755 100%
+    #0d31a5e7 100%
   );
 }
 
@@ -80,6 +97,10 @@
 }
 
 
+
+.navbar Route{
+  padding: 40px 20px;
+}
 @media screen and (max-width: 1024px) {
   .loginBg {
     left: 50%;

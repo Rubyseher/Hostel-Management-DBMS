@@ -11,9 +11,8 @@ function Login() {
     const onSubmit = (data) => {
         if(data.username=="root" && data.password=="oreo123456")
             setRedirect("./dashboard")
-            // console.log(data);
         else console.log("wrong username or password");
-    }; // your form submit function which will invoke after successful validation
+    }; 
 
     if (redirect) return <Redirect push to={{ pathname: redirect }} />
 
