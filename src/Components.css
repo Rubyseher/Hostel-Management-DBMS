@@ -31,6 +31,7 @@
   margin-left: -70px;
   margin-bottom: 30px;
 }
+
 .login input {
   display: block;
   box-sizing: border-box;
@@ -44,6 +45,9 @@
   color: grey;
 }
 
+.login input:hover{
+    color: black;
+}
 .gradientLogin {
   background-image: linear-gradient(
     to right,
@@ -74,6 +78,7 @@
   color: #fff;
   text-decoration: none;
 }
+
 
 @media screen and (max-width: 1024px) {
   .loginBg {
