@@ -8,7 +8,6 @@ function Student() {
             <Navbars/>
             <div style={{padding:'50px 300px'}}>
                 <h2>Students Details</h2>
-                
             </div>
         </div>
     )

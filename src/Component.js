@@ -12,11 +12,22 @@ export const Navbars = props => {
 
     return (
         <div className='burger'>
-            <h4 onClick={() => setRedirect("./")}> <LoginIcon sx={{ fontSize: 26 }} /> &nbsp;Login</h4>
-            <h4 onClick={() => setRedirect("./dashboard")}> <ListAltIcon sx={{ fontSize: 26 }} /> &nbsp;Dashboard</h4>
-            <h4 onClick={() => setRedirect("./student")}> <GroupIcon sx={{ fontSize: 26 }} /> &nbsp;Students</h4>
-            <h4 onClick={() => setRedirect("./dashboard")}> <PersonIcon sx={{ fontSize: 26 }} /> &nbsp;Hostel</h4>
+            <h4 onClick={() => setRedirect("./")}> <LoginIcon sx={{ fontSize: 28 }} /> &nbsp;Login</h4>
+            <h4 onClick={() => setRedirect("./dashboard")}> <ListAltIcon sx={{ fontSize: 28 }} /> &nbsp;Dashboard</h4>
+            <h4 onClick={() => setRedirect("./student")}> <GroupIcon sx={{ fontSize: 28 }} /> &nbsp;Students</h4>
+            <h4 onClick={() => setRedirect("./dashboard")}> <PersonIcon sx={{ fontSize: 28 }} /> &nbsp;Hostel</h4>
         </div>
     )
 }
 
+export const StudentCards = props => {
+    const [redirect, setRedirect] = useState();
+
+    if (redirect) return <Redirect push to={{ pathname: redirect }} />
+
+    return (
+        <div className='studentCard'>
+            <PersonIcon sx={{ fontSize: 26 }} />
+        </div>
+    )
+}
