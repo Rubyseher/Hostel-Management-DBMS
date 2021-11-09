@@ -4,7 +4,7 @@ import { Navbars, StudentCards } from './Component.js';
 
 function Dashboard() {
     return (
-        <div style={{ backgroundColor: '#e7f3fe' }}>
+        <div >
             <Navbars />
             <div style={{ display: "inline-block", padding: 40, marginLeft:250, width:'80%' }}>
                 <h2>Students</h2>
