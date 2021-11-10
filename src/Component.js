@@ -9,6 +9,8 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import DoorFrontIcon from '@mui/icons-material/DoorFront';
+import { grey } from "@mui/material/colors";
+
 export const Navbars = props => {
     const [redirect, setRedirect] = useState();
 
@@ -65,6 +67,29 @@ export const StudentCards = props => {
                 <h6><b>Dob :</b> 2002-09-30</h6>
                 <h6><b>Age :</b>18</h6>
                 <h6><b>City :</b> Bangalore</h6>
+            </div>
+        </div>
+    )
+}
+
+export const StudentScroll = props => {
+    const [redirect, setRedirect] = useState();
+
+    if (redirect) return <Redirect push to={{ pathname: redirect }} />
+
+    return (
+        <div style={{ margin: '5px 18px' }}>
+            <div className='studentScroll'>
+
+                <div style={{ display: "inline-flex" }}>
+                    <div className='circleS' style={{backgroundColor:props.color}}><PersonIcon sx={{ fontSize: 32, color: "white", margin: '5px 0px 0 6px' }} /></div>
+
+                    <div style={{ display: "inline-block" ,margin:"30px 0 0 15px"}}>
+                        <h5>John Snow</h5>
+                        <div style={{color:'grey',marginTop:-10}}>{props.data}</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
