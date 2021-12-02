@@ -59,7 +59,7 @@ export const StudentCards = props => {
     return (
         <div style={{ margin: '5px 15px' }}>
             <div className='studentCard'>
-                <div className='circleS'><PersonIcon sx={{ fontSize: 32, color: "white", margin: '5px 0px 0 6px' }} /></div>
+                <div className={`circleS ${props.color}`} ><PersonIcon sx={{ fontSize: 32, color: "white", margin: '5px 0px 0 6px' }} /></div>
                 <h5 style={{ position: 'relative', left: 60, top: -25 }}>John Snow</h5>
                 <h6><b>Student id :</b> ENG20C0265</h6>
                 <h6><b>Father Name :</b> Ajay</h6>
@@ -82,7 +82,7 @@ export const StudentScroll = props => {
             <div className='studentScroll'>
 
                 <div style={{ display: "inline-flex" }}>
-                    <div className='circleS' style={{backgroundColor:props.color}}><PersonIcon sx={{ fontSize: 32, color: "white", margin: '5px 0px 0 6px' }} /></div>
+                    <div className={`circleS ${props.color}`} ><PersonIcon sx={{ fontSize: 32, color: "white", margin: '5px 0px 0 6px' }} /></div>
 
                     <div style={{ display: "inline-block" ,margin:"30px 0 0 15px"}}>
                         <h5>John Snow</h5>

@@ -6,9 +6,9 @@ function Student() {
     return (
         <div>
             <Navbars />
-            <div style={{ padding: '50px 300px' }}>
+            <div style={{ display: "inline-block", padding: 40, marginLeft: 100, width: '92%' }}>
                 <h2>Students Details</h2>
-                <StudentCards />
+                <StudentCards color={"blue"}/>
                 <StudentCards />
                 <StudentCards />
                 <StudentCards />

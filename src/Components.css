@@ -32,6 +32,9 @@
   margin-bottom: 30px;
 }
 
+.blue{
+  background-color: "#1069d8";
+}
 .login input {
   display: block;
   box-sizing: border-box;
